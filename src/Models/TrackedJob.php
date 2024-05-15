@@ -20,7 +20,9 @@ use Junges\TrackableJobs\Enums\TrackedJobStatus;
  * @property int trackable_id
  * @property string trackable_type
  * @property string name
+ * @property string|null job_id
  * @property string status
+ * @property int attempts
  * @property string|null output
  * @property \Illuminate\Support\Carbon|null started_at
  * @property \Illuminate\Support\Carbon|null finished_at

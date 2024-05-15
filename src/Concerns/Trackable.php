@@ -15,7 +15,7 @@ trait Trackable
 
     public function __construct()
     {
-        if (! static::$shouldBeTracked) {
+        if (! static::$shouldBeTracked || $this->job->getJobId() === null) {
             return;
         }
 
